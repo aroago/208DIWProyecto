@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    picture{
+        display: flex;
+        width: 75vw;
+        height: 45vh;
+    }
+</style>
+<body>
+    <h2>Imagenes</h2>
+    <picture>
+        <source media="(min-width:1200px)" srcset="./media/img/imagen1.jpg">
+        <source media="(min-width:665px)" srcset="./media/img/imagen4.jpg" >
+        <img src="./media/img/imagen2.jpg" alt="dibujoTigre">
+    </picture>
+    <h2>Videos</h2>
+    <table>
+        <tr>
+            <td>
+                <video src="./media/video/buho.mp4" width="310" height="196" preload="none" controls></video>
+            </td>
+            <td>
+                <iframe width="310" height="196"
+                    src="https://www.youtube.com/embed/N02-NZLFiO4?rel=0&autoplay=1"></iframe>
+            </td>
+        </tr>
+    </table><br>
+    <h2>Audios</h2>
+    <audio controls>
+        <source src="./media/audio/audio1.mp3" type="audio/mpeg">
+    </audio>
+
+</body>
+
+</html>

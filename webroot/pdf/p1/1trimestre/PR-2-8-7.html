@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Tahoma, sans-serif;
+        }
+
+        .contenedor {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            margin: auto;
+            background-color: teal;
+        }
+
+        body {
+            text-align: center;
+        }
+
+        .btn {
+            position: absolute;
+            top: 50px;
+            left: 50%;
+        }
+
+        #submit {
+            background-color: black;
+            color: white;
+            width: 128px;
+            height: 68px;
+            line-height: 68px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .btn::before {
+            border-bottom: whitesmoke;
+        }
+
+        .btn{
+            color: #666;
+            display: inline-block;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .btn:after {
+            display: block;
+            content: '';
+            border-bottom: solid 5px #ffffff;
+            transform: scaleX(0);
+            transition: transform 250ms ease-in-out;
+            transform-Origin:  0% 50%; 
+        }
+
+        .btn:hover:after {
+            transform: scaleX(1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="btn">
+            <input type="button" value="IZQA A DRCHA" id="submit" />
+        </div>
+    </div>
+</body>
+
+</html>

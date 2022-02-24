@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .uno,
+        .dos,
+        .tres,
+        .cuatro ,.cinco,.seis{
+            width: 20%;
+        }
+
+        .uno p {
+            background-color: rgb(192, 188, 187);
+            padding: 5%;
+            margin: 2%;
+        }
+
+        .uno p:first-child {
+            background-color: rgb(85, 141, 214)
+        }
+
+        .uno p:last-child {
+            background-color: rgb(214, 147, 85)
+        }
+
+        .dos li:nth-child(2),
+        li:nth-child(5) {
+            background-color: crimson;
+        }
+
+        .dos li:nth-last-child(3) {
+            background-color: rgb(219, 115, 136);
+        }
+
+        .tres p,.cuatro p, .cinco p, .seis p{
+            padding: 5%;
+            margin: 2%;
+        }
+
+        .tres p:only-child {
+            background-color: rgb(152, 211, 50);
+        }
+        .cuatro p{
+            background-color: rgb(192, 188, 187) ;
+        }
+        .cuatro p:first-of-type {
+            background-color: rgb(135, 231, 235);
+        }
+
+        .cuatro span:first-of-type {
+            background-color: white;
+        }
+        .cuatro div:first-of-type {
+            background-color: yellow;
+        }
+        .cuatro p:last-of-type {
+            background-color: rgb(192, 188, 187);
+        }
+        
+        
+        .cinco p:nth-of-type(1){background-color: rgb(192, 188, 187) ; }
+        .cinco p:nth-of-type(2){background-color: rgb(85, 141, 214)}
+        .cinco p:nth-last-of-type(1){
+           background-color: rgb(192, 188, 187) ;
+        }
+        .cinco strong:nth-last-of-type(1){
+            color:white;
+            background-color: rgb(182, 117, 32)}
+
+        .seis p{
+            background-color: rgb(192, 188, 187) ;
+        }
+        .seis span:only-of-type{
+        background-color: tomato;
+        }
+            .ejer2 div{
+                width: 100px;height: 80px;
+                background-color: teal;
+                text-align: center;
+                line-height: 80px;
+                font-weight: bold;
+                margin: 0.4rem;
+                display: inline-block;
+            }
+            /*Colorea el cuadro número 6
+            .ejer2 div:nth-child(6){background-color: turquoise;}*/
+            /*Colorea los cuadros 3, 6, 9, 12, 15 y 18
+            .ejer2  div:nth-child(-3n+18){
+                background-color: turquoise;
+            }*/
+            /*Colorea los cuadros del 8 al 20
+            .ejer2 div:nth-child(n+8):nth-child(-n+20){
+                background-color: turquoise;
+            }*/
+            /*Colorea los cuadros  5, 8, 11, 14, 17, 20 , 23
+            .ejer2 div:nth-last-child(3n+5):nth-child(-n+23){
+                background-color: turquoise;
+            }*/
+            
+            /*Colorea los cuadros 3 y 12 
+            .ejer2 div:nth-child(9n+3):nth-child(-3n+12){
+                background-color: turquoise;
+            }*/
+            /*Colorea el 12 y el 18*/
+            .ejer2 div:nth-child(6n+12):nth-child(-3n+18){
+                background-color: turquoise;
+            }
+            .ejer3{
+                width: 95vw;height: 100%;
+                margin: 5px auto;
+                border: 2px solid black;
+                padding: 0.5rem;
+            }
+            .ejer3 li{
+                list-style-type: none;
+                display: inline-block;
+                margin-right: 0.5rem;
+               
+            }
+            .ejer3 a{
+                display: block;
+                text-decoration: none;
+                color: black;
+                font-family: Impact, sans-serif;
+                width: 128px;height: 48px;
+                text-align: center;
+                line-height: 48px;
+               
+            }
+            .ejer3 li:nth-of-type(1){
+                background-color: palevioletred;
+            }
+            .ejer3 li:nth-of-type(2){
+                background-color: rgb(168, 116, 85);
+            }
+            .ejer3 li:nth-of-type(3){
+                background-color: rgb(241, 82, 8);
+            }
+            .ejer3 article a{
+                background-color: rgb(37, 136, 70);
+                border-radius: 0.5rem;
+                color:white;
+                margin: 10px;
+            }
+           .ejer3 a:hover{
+                filter: invert(1);
+            }
+            .ejer3 article:nth-of-type(1){
+                background-color: grey;
+            }
+            .ejer3 article:nth-of-type(2){
+                background-color: orange;
+            }
+            .ejer3 article:nth-of-type(3){
+                background-color: rgb(0, 255, 213);
+            }
+            .ejer3 article:target{
+                font-family: 'Courier New', Courier, monospace;
+                color:white
+            }
+    </style>
+</head>
+
+<body>
+    <h1>Ejercicio 1</h1>
+    <div class="uno">
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+        <p>Paragraph 4</p>
+        <p>Paragraph 2</p>
+    </div>
+    <!--ul>li*6>a[href=#]{opcion$}-->
+    <div class="dos">
+        <ul>
+            <li>opcion1</li>
+            <li>opcion2</li>
+            <li>opcion3</li>
+            <li>opcion4</li>
+            <li>opcion5</li>
+            <li>opcion6</li>
+        </ul>
+    </div>
+    <div class="tres">
+        <p>single paragraph</p>
+    </div>
+    <div class="cuatro">
+        <p>Paragraph one</p>
+        <span>text in span</span>
+        <p>Paragraph two2</p>
+        <strong>Text in Strong</strong>
+        <div>This is a div</div>
+        <p>Paragraph three</p>
+    </div>
+    <div class="cinco">
+        <p>Paragraph one</p>
+        <span>text in span</span>
+        <p>Paragraph two2</p>
+        <strong>Text in Strong</strong>
+        <div>This is a div</div>
+        <p>Paragraph three</p>
+    </div>
+    <div class="seis">
+        <p>Paragraph one</p>
+        <span>text in span</span>
+        <p>Paragraph two2</p>
+        <p>Paragraph three</p>
+    </div>
+    <h1>Ejercicio 2</h1>
+    <div class="ejer2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+        <div>16</div>
+        <div>17</div>
+        <div>18</div>
+        <div>19</div>
+        <div>20</div>
+        <div>21</div>
+        <div>22</div>
+        <div>23</div>
+        <div>24</div>
+        <div>25</div>
+    </div>
+    <h1>Ejercicio 3</h1>
+    <div class="ejer3">
+        <div id="inicio"></div>
+        <ul>
+            <li><a href="#a1">Primero</a></li>
+            <li><a href="#a2">Segundo</a></li>
+            <li><a href="#a3">Tercero</a></li>
+        </ul>
+        <article id="a1">
+            <h2>Articulo uno</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil minima sit nostrum asperiores ullam rerum perspiciatis voluptas alias? Voluptatem, laborum ex! Iusto odio quisquam excepturi, nemo alias laboriosam quidem illum!
+            Iusto quo aperiam, eius tempore dolorem obcaecati dicta reiciendis suscipit numquam. Facilis optio molestiae commodi error iusto at sit est quam illo, quos quisquam cum veritatis recusandae nobis assumenda qui.
+            Ipsa quisquam excepturi suscipit quo. In ducimus veniam unde, harum ratione perspiciatis cum tenetur maiores, accusantium enim aliquam molestiae quisquam eaque ullam error atque nesciunt iusto! Molestias alias soluta eligendi!</p>
+            <a href="#inicio">volver</a>
+        </article>
+        <article id="a2">
+            <h2>Articulo dos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil minima sit nostrum asperiores ullam rerum perspiciatis voluptas alias? Voluptatem, laborum ex! Iusto odio quisquam excepturi, nemo alias laboriosam quidem illum!
+                Iusto quo aperiam, eius tempore dolorem obcaecati dicta reiciendis suscipit numquam. Facilis optio molestiae commodi error iusto at sit est quam illo, quos quisquam cum veritatis recusandae nobis assumenda qui.
+                Ipsa quisquam excepturi suscipit quo. In ducimus veniam unde, harum ratione perspiciatis cum tenetur maiores, accusantium enim aliquam molestiae quisquam eaque ullam error atque nesciunt iusto! Molestias alias soluta eligendi!</p>
+            <a href="#inicio">volver</a>
+        </article>
+        <article id="a3">
+            <h2>Articulo tres</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil minima sit nostrum asperiores ullam rerum perspiciatis voluptas alias? Voluptatem, laborum ex! Iusto odio quisquam excepturi, nemo alias laboriosam quidem illum!
+                Iusto quo aperiam, eius tempore dolorem obcaecati dicta reiciendis suscipit numquam. Facilis optio molestiae commodi error iusto at sit est quam illo, quos quisquam cum veritatis recusandae nobis assumenda qui.
+                Ipsa quisquam excepturi suscipit quo. In ducimus veniam unde, harum ratione perspiciatis cum tenetur maiores, accusantium enim aliquam molestiae quisquam eaque ullam error atque nesciunt iusto! Molestias alias soluta eligendi!</p>
+            <a href="#inicio">volver</a>
+        </article>
+    </div> <!--contenedor -->
+
+</body>
+
+</html>

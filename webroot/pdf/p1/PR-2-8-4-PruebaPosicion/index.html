@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          font-family: sans-serif;
+          font-weight: bold;
+      }
+      .container{
+            width:100vw;height:100vw ;
+          text-align: center;
+      }
+      .art{
+          position: relative;
+        display: inline-block;
+        height: 300px;width:180px;
+        border: solid 3px rgb(185, 184, 184);
+        background-color: rgb(185, 184, 184);
+        border-radius: 10px;
+        box-shadow: 
+        rgba(18, 59, 13, 0.4) 5px 5px,
+         rgba(18, 65, 65, 0.3) 10px 10px, 
+         rgba(55, 70, 20, 0.2) 15px 15px, 
+         rgba(18, 73, 25, 0.1) 20px 20px, 
+         rgba(26, 97, 35, 0.05) 25px 25px;
+        
+      }
+      .precio{
+          position: absolute;
+          top:165px;
+      }
+      p{
+          position: absolute;
+          color:rgb(6, 179, 6);
+          top:205px;
+          text-align: left;
+          font-weight: bold;
+          font-size: 10px;
+      }
+      .precio img + p{
+          color:black;
+          position: absolute;
+          top:6px;
+          left: 15px;
+          font-family: Impact;
+          font-size: small;
+      }
+      .iconos{
+          position: absolute;
+            bottom: 10px;
+      }
+      .stock{
+        position: absolute;
+        bottom: 10px;
+         right: 10px;
+         
+      }
+      .stock img{
+        border-radius: 50px;
+      }
+      .cosas img{
+        height:30px; width:30px;
+        
+       
+      }
+      .cosas{
+        position: absolute;
+        top:120px;
+        display: none;
+      }
+       .art:hover > .cosas{
+           display: block;
+       }
+       img{
+        border-radius: 10px;
+       }
+      </style>
+</head>
+<body>
+    <div class="container">
+        <h1>LISTADO DE ARTICULOS</h1>
+        <div class="art">
+            <img src="./img/reloj.jpg" alt="img" height="180px" width="180px" />
+            <p>RELOJ DE CUARZO CON CORREA DE SILICONA INFORMAL...</p>
+            <div class="precio">
+                <img src="./img/boton_amarillo.png" alt="img" height="30px" width="70px" />
+                <p>65.90€</p>
+            </div>
+            <div class="iconos">
+                <img src="./img/novedad.png" alt="img" height="35px" width="35px" />
+                <img src="./img/topventas.png" alt="img" height="35px" width="35px" />
+                
+            </div>
+            <div class="stock">
+                <img  src="http://picsum.photos/id/40/100/100" alt="img" height="35px" width="35px" />
+            </div>
+            <div class="cosas">
+                <img  src="./img/vista-previa-gris.png" alt="img"  />
+                <img  src="./img/listadeseo.png" alt="img"  />
+                <img  src="./img/comparador.png" alt="img" />
+                <img  src="./img/configurador.png" alt="img"  />
+                <img  src="./img/carro.png" alt="img"  />
+            </div>
+        </div>
+        <div class="art">
+            <img src="./img/apple-watch-6.jfif" alt="img" height="180px" width="180px"/>
+            <p>APPLE WATCH-6 CAJA 44MM ALUMINIO Y CORREA AZUL</p>
+            <div class="precio">
+                <img src="./img/boton_amarillo.png" alt="img" height="30px" width="70px" />
+                <p>399.00€</p>
+            </div>
+            <div class="iconos">
+                <img src="./img/novedad.png" alt="img" height="35px" width="35px" /> 
+            </div>
+            <div class="stock">
+                <img  src="http://picsum.photos/id/12/100/100" alt="img" height="35px" width="35px" />
+            </div>
+            <div class="cosas">
+                <img  src="./img/vista-previa.png" alt="img"  />
+                <img  src="./img/listadeseo-gris.png" alt="img"  />
+                <img  src="./img/comparador.png" alt="img" />
+                <img  src="./img/configurador.png" alt="img"  />
+                <img  src="./img/carro.png" alt="img"  />
+            </div>
+        </div>
+        <div class="art">
+            <img src="./img/samsungGalaxyWatchActive2.png" alt="img"  height="180px" width="180px" />
+            <p>SAMSUNG GALAXY WATH ACTIVE2 40MM BT</p>
+            <div class="precio">
+                <img src="./img/boton_amarillo.png" alt="img" height="30px" width="70px" />
+                <p>279.90€</p>
+            </div>
+            <div class="iconos">
+                <img src="./img/novedad.png" alt="img" height="35px" width="35px" />
+                <img src="./img/topventas.png" alt="img" height="35px" width="35px" />
+            </div>
+            <div class="stock">
+                <img src="http://picsum.photos/id/45/100/100" alt="img" height="35px" width="35px" />
+            </div>
+            <div class="cosas">
+                <img  src="./img/vista-previa.png" alt="img"  />
+                <img  src="./img/listadeseo.png" alt="img"  />
+                <img  src="./img/comparador-gris.png" alt="img" />
+                <img  src="./img/configurador.png" alt="img"  />
+                <img  src="./img/carro.png" alt="img"  />
+            </div>
+        </div>
+    </div>
+</body>
+</html>

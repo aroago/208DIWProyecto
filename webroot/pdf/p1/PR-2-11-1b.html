@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 500px;
+            height: 300px;
+            margin: 5rem auto;
+            background-image: url("http://picsum.photos/id/460/500/300");
+            border: 4px solid rgb(255, 0, 0);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .capa2, h2,p {
+            position: absolute;
+            right: -125%;
+            color: white;
+        }
+
+        .capa2{
+            background-color: rgba(255, 0, 0, 0.267);
+            width: 492px;
+            height: 292px;
+        }
+
+        .container:hover .capa2{
+            transition: 1s linear 0s;
+            right: 0px;
+
+        }
+
+        .container:hover h2 {
+            transition: 1s linear 1s;
+            right: 200px;
+        }
+
+        .container:hover p {
+            transition: 1s linear 2s;
+            right: 175px;
+        }
+
+        h2{
+            top: 140px;
+        }
+
+        p {
+            top: 160px;
+            /* transition-delay: 1.5s; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="capa2"></div>
+        <h2>Titulo</h2>
+        <p>Esto Es una prueba</p>
+    </div>
+</body>
+
+</html>

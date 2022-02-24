@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR-2-9-2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Tahoma, sans-serif;
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            flex-flow: column nowrap;
+            width: 100vw;
+            height: 100vh;
+        }
+        header{
+            flex-basis: 20%;
+            background-color: grey;
+            font-weight: bold;
+        }
+        main{
+            flex-basis: 70%;
+            display: flex;
+            flex-flow: column nowrap;
+            
+        }
+        nav{
+            flex-basis: 10%;
+            background-color: olive;
+        }
+        section{
+            flex-basis: 77%;
+            background-color: paleturquoise;
+        }
+        aside{
+            flex-basis: 13%;
+            background-color: rgb(216, 226, 172);
+        }
+        footer{
+            flex-basis: 10%;
+            background-color: rgb(238, 139, 153);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            HEADER
+        </header>
+        <main>
+            <nav>Menu</nav>
+            <section>Principal</section>
+            <aside>aside</aside>
+        </main>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>

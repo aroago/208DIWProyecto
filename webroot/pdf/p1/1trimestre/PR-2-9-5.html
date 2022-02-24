@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, sans-serif;
+        }
+ nav {
+  padding: 1em;
+  font-family:sans-serif;
+  
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: column;
+  background: rgb(140, 105, 172);
+}
+
+nav li a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  padding: .5em 1em;
+}
+
+nav li a:hover {
+  background: #86d1f3;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  #icono {
+    display: none;
+    
+  }
+}
+@media screen and (min-width: 576px) {
+  nav ul {
+    display: flex;
+    flex-flow: row;
+    justify-content:flex-end;
+  }
+ 
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+         <li id="icono"><a href="#">&#9883;</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            color: white;
+            font-size: 20px;
+        }
+
+        .container {
+            width: 95vw;
+            height: 100vh;
+            margin: 5rem auto;
+            background: rgb(189, 161, 161);
+            padding: 5rem;
+        }
+
+        ul {
+            list-style: none;
+            width: 750px;
+            height: 80px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-flow: row;
+        }
+
+        .menu1 {
+            background: rgb(95, 160, 114);
+            margin-bottom: 1rem;
+        }
+        .menu1 li:hover{
+            border-top: 2px solid white;
+            border-bottom: 2px solid white;
+            padding: 5px;
+            transition: 0.4s all ease-in-out;
+        }
+        .menu2 {
+            background-color: cadetblue;
+        }
+        .menu2 li:hover{
+            padding: 20px;
+            color:rgb(175, 149, 5);
+            background-color: rgb(156, 202, 204);
+            transition: 0.4s all ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul class="menu1">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Shop</li>
+        </ul>
+        <ul class="menu2">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Shop</li>
+        </ul>
+    </div>
+</body>
+
+</html>

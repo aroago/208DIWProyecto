@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+* {
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+	}
+
+ul, ol{
+	list-style:none;
+}
+a{
+text-decoration:none;
+color:white;
+}
+
+.topmenu {
+  background-color:grey;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+nav a{
+	color:black;
+}
+nav li{
+	display:inline-block;
+}
+nav a{
+	padding:20px;
+}
+
+.column {
+  float: left;
+  padding: 8px;
+ 
+}
+
+.column.sidemenu{
+  width: 25%;
+  height: 600px;
+ background-color: pink;
+}
+
+
+.column.content{
+  width: 50%;
+}
+.clearfix:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color:grey;
+}
+.header{
+	padding:10px;
+	margin:5px;
+	border:2px black solid;
+	border-color:darkred;
+	text-align:center;
+	color:#9F134A;
+	font-variant:small-caps;
+}
+article h2{
+	color:#9F134A;
+	padding:5px 5px 5px 10px;
+	font-variant:small-caps;
+	letter-spacing:0.1em;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="topmenu">
+            <li><img src="http://picsum.photos/id/10/150/150" alt="img" /></li>
+            <li>hola</li>
+            <li> <img src="http://picsum.photos/id/2/150/150" alt="img" /></li>
+        </ul>       
+    </nav>
+    <main class="clearfix">
+        <div class="column sidemenu">
+           <p>hola</p>
+        </div>
+        <div class="column content">
+            <section>
+                <article>
+                    <h2>Mi primer articulo</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, eaque enim harum corporis deserunt nulla
+                        molestias aspernatur ducimus quos consequatur vel commodi explicabo maxime ut deleniti inventore sint
+                        quae quidem.</p>
+                </article>
+                <article>
+                    <h2>Mi segundo articulo</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, eaque enim harum corporis deserunt nulla
+                        molestias aspernatur ducimus quos consequatur vel commodi explicabo maxime ut deleniti inventore sint
+                        quae quidem.</p>
+                </article>
+                <article>
+                    <h2>Mi tercer articulo</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, eaque enim harum corporis deserunt nulla
+                        molestias aspernatur ducimus quos consequatur vel commodi explicabo maxime ut deleniti inventore sint
+                        quae quidem.</p>
+                </article>
+            </section>
+        </div>
+        <div class="column sidemenu">
+            <p>hola</p>
+         </div>
+    </main>
+    <div class="footer">
+        <p> Aroa Granero Omañas</p>
+    </div>
+
+</body>
+
+
+
+</html>

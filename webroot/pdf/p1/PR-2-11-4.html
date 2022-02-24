@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGO</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            --clrCara: blue;
+            --clrReverse: rgb(210, 57, 30);
+        }
+
+        .container {
+            width: 95vw;
+            height: 95vh;
+            perspective: 1000px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .carta {
+            margin: 3rem auto;
+            width: 150px;
+            height: 250px;
+            background-color: rgb(30, 210, 201);
+            position: relative;
+            transform-style: preserve-3d;
+            transition: 1s linear;
+        }
+
+        .cara,
+        .reverse {
+            width: 150px;
+            height: 250px;
+            font-size: 10rem;
+            color: cornsilk;
+            text-align: center;
+            line-height: 250px;
+            position: absolute;
+            backface-visibility: hidden;
+        }
+
+        .cara {
+            background: var(--clrCara);
+        }
+
+        .reverse {
+            background: var(--clrReverse);
+            transform: rotateY(180deg);
+        }
+
+        .carta:hover{
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>GRIRO DE CARTA</h1>
+        <div class="carta">
+            <div class="cara">1</div>
+            <div class="reverse">2</div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        .wrapper{
+            width: 80vw;
+            margin: 1rem auto;
+        }
+        article a{
+            display: block;
+            text-decoration: none;
+            font-weight: bold;
+            background-color: rgb(180, 180, 180);
+            color: rgb(95, 138, 204);
+            padding: 0.5rem;
+        }
+        article p{
+            background-color: rgb(212, 211, 211);
+            padding: 1.5rem;
+            display: none;
+        }
+        p:target{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <article>
+            <a href="#p1">Titulo 1</a>
+            <p id="p1">T1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, ullam? Natus commodi doloribus doloremque, quaerat voluptates adipisci mollitia alias, sint architecto quo consectetur dignissimos in reprehenderit perspiciatis animi? Voluptatem, cupiditate.</p>
+        </article>
+        <article>
+            <a href="#p2">Titulo 2</a>
+                <p id="p2">T2 Velit aut laudantium blanditiis laborum repellat asperiores tenetur in eligendi molestiae. Nobis dolore explicabo, doloremque obcaecati commodi quas laborum perspiciatis corporis iusto, saepe unde animi mollitia perferendis quod natus! Incidunt.</p>
+            
+        </article>
+        <article>
+            <a href="#p3">Titulo 3 </a>
+                <p id="p3">T3 Numquam voluptatum explicabo velit provident impedit saepe eos voluptatibus perspiciatis ullam eum! Aut officiis, facere magnam maxime laboriosam aliquid! Sit omnis minima enim velit sunt eveniet aliquid incidunt eos asperiores!</p>
+           
+        </article>
+        <article>
+            <a href="#">Cerrar </a>
+        </article>
+    </div>
+</body>
+</html>

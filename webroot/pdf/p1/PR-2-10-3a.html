@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR-2-10-3b</title>
+    <style>
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .container{
+            width: 95vw;
+            height: 95vh;
+            margin: auto;
+            background-color: rgb(211, 211, 211);
+        }
+        h1{
+            text-align: center;
+        }
+        img{
+            max-height: 100%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .galeria{
+            min-width: 350px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+            grid-template-rows: 350px;
+            font-size: 0.8rem;
+            gap: 2rem;
+        }
+        .card{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.5fr 1.5fr 8fr;
+            overflow: hidden;
+        } 
+        .card img{
+            transition: all 0.5s ease;
+        }
+        .card img:hover{
+            transform: scale(1.2);
+        }
+        .card:nth-child(1){
+            background-color: #581845 ;
+        }
+        .card:nth-child(2){
+            background-color: #900C3F;
+        }
+        .card:nth-child(3){
+            background-color: #C70039;
+        }
+        .card:nth-child(4){
+            background-color: #FF5733;
+        }
+        .card:nth-child(5){
+            background-color: #FFC300;
+        }
+        .card:nth-child(6){
+            background-color: #DAF7A6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Galeria de tarjetas con imagen</h1>
+        <div class="galeria">
+            <div class="card">
+                <h3>El Titulo</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing </p>
+                <img src="http://picsum.photos/id/80/300/300" alt="options">
+            </div>
+            <div class="card">
+                <h3>El Titulo</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing </p>
+                <img src="http://picsum.photos/id/302/300/300" alt="options">
+            </div>
+            <div class="card">
+                <h3>El Titulo</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing </p>
+                <img src="http://picsum.photos/id/300/300/300" alt="options">
+            </div>
+            <div class="card">
+                <h3>El Titulo</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing </p>
+                <img src="http://picsum.photos/id/331/300/300" alt="options">
+            </div>
+            <div class="card">
+                <h3>El Titulo</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing </p>
+                <img src="http://picsum.photos/id/318/300/300" alt="options">
+            </div>
+            <div class="card">
+                <h3>El Titulo</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing </p>
+                <img src="http://picsum.photos/id/79/300/300" alt="options">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

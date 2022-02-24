@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        .container{
+            margin: 10px 1rem;
+            position: relative;
+        }
+       
+        article{
+            width: 582px;
+            height: 382px;
+            position: absolute;
+            background-color: rgb(248, 228, 205);
+            margin-left: -10px;
+            padding: 24px;
+        }
+        input{
+            display: none;
+        }
+        label{
+            display: inline-block;
+            width: 100px;height: 48px;
+            background-color: rgb(115, 119, 156);
+            color: rgb(255, 255, 255);
+            text-align: center;
+            line-height: 48px;
+            border-radius: 4px 4px 0 0;
+            margin-right:0.2rem ;
+        }
+        a{text-decoration: none;
+        color:black}
+
+        article:nth-of-type(1){
+            z-index: 10;
+        }
+        input:checked + label {
+           background-color: rgb(132, 185, 235);
+        }
+        input:checked +label+ article {
+           z-index: 100;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <input type="radio" name="rdo" id="rd1">
+        <label for="rd1" id="lb1">Radio 1</label>
+        <article id="art1">
+            <p>Este es el contenido del RADIO 1</p>
+        </article>
+
+        <input type="radio" name="rdo" id="rd2">
+        <label for="rd2" id="lb2">Radio 2</label>
+        <article id="art2">
+            <p>Este es el contenido del RADIO 2</p>
+        </article> 
+
+        <input type="radio" name="rdo" id="rd3">
+        <label for="rd3" id="lb3">Radio 3</label>
+        <article id="art3">
+            <p>Este es el contenido del RADIO 3</p>
+        </article>
+
+        <input type="radio" name="rdo" id="rd4">
+        <label for="rd4" id="lb4">Radio 4</label>
+        <article id="art4">
+            <p>Este es el contenido del RADIO 4</p>
+        </article>
+
+        <input type="radio" name="rdo" id="rd5">
+        <label for="rd5" id="lb5">Radio 5</label>
+        <article id="art5">
+            <p>Este es el contenido del RADIO 5</p>
+        </article>
+       
+        
+      
+        
+        
+    </div>
+</body>
+
+</html>

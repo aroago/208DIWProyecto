@@ -1,0 +1,43 @@
+<!DOCTYPEhtml>
+    <htmllang="en">
+
+        <head>
+            <metacharset="UTF-8">
+                <metahttp-equiv="X-UA-Compatible"content="IE=edge">
+                    <metaname="viewport"content="width=device-width, initial-scale=1.0">
+                        <title>Ejemplo máscaras texto</title>
+                        <style>
+                            * {
+                                margin: 0;
+                                padding: 0;
+                                box-sizing: border-box;
+                                background-color: black;
+                            }
+
+                            h1 {
+                                color: transparent;
+                                background: url('https://images.unsplash.com/photo-1644865439228-49106cb7b601?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80') repeat;
+                                /*El fondo del elemento se recorta con la forma del texto: */
+                                -webkit-background-clip: text;
+                                font-family: 'Impact', sans-serif;
+                                text-transform: uppercase;
+                                font-size: 7em;
+                                text-align: center;
+                                letter-spacing: 10px;
+                                line-height: 110px;
+                                /*Relleno de color al texto*/
+                                -webkit-text-fill-color: rgba(209, 52, 149, 0.308);
+                                /*borde del texto:*/
+                                -webkit-text-stroke-width: 3px;
+                                -webkit-text-stroke-color: rgb(255, 255, 255);
+                            }
+                        </style>
+        </head>
+
+        <body>
+            <divclass="container">
+                <h1>COSAS CON FONDO</h1>
+                </div>
+        </body>
+
+        </html

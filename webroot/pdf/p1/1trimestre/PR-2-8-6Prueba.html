@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            position: relative;
+            width: 300px;
+            height: 80px;
+            background-color: teal;
+            border-radius: 8px;
+            font-size: 3rem;
+            color: white;
+            line-height: 80px;
+            padding-left: 20px;
+            margin-top: 50px;
+        }
+
+        .box::after {
+            position: absolute;
+            display: block;
+            top: 80px;
+            left: 20px;
+            width: 0px;
+            height: 0px;
+            content: "";
+            color: teal;
+            border-top: 35px solid teal;
+            border-left: 35px solid transparent;
+            border-right: 35px solid transparent;
+            border-bottom: 35px solid transparent;
+        }
+
+        .box::before {
+            position: absolute;
+            display: block;
+            top: -70px;
+            left: 230px;
+            width: 0px;
+            height: 0px;
+            content: "";
+            color: teal;
+            border-top: 35px solid transparent;
+            border-left: 35px solid transparent;
+            border-right: 35px solid transparent;
+            border-bottom: 35px solid teal;
+        }
+
+        div.esfera {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            background-color: green;
+            background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+            -ms-border-radius: 150px;
+            -moz-border-radius: 150px;
+            -webkit-border-radius: 150px;
+            -o-border-radius: 150px;
+            border-radius: 150px;
+            margin: 120px auto;
+        }
+        .esfera::after{
+            position: absolute;
+            background-color: teal;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            A
+        </div>
+    </div>
+    <div class="container2">
+        <div class="esfera"></div>
+    </div>
+</body>
+
+</html>

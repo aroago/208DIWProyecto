@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            
+            border: 2px solid black;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .container{
+            width: 800px;
+            display: grid;
+            grid-template-columns: 400px 400px;
+            grid-template-rows: 100px ;
+            /* grid-template-rows: 150px 100px 200px; */
+            margin-bottom: 20px;
+            /* grid-template-columns: repeat(4, 100px); */
+            background-color: rgb(231, 147, 227);
+        }
+        .container2 {
+            width: 800px;
+            display: grid;
+            grid-template-columns: 400px 400px;
+            grid-auto-rows: 150px;
+            margin-bottom: 20px;
+            background-color: burlywood;
+        }
+        .container3 {
+            width: 800px;
+            display: grid;
+            grid-template-columns: 100px 300px 400px;
+            grid-template-rows: 200px;
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+    </div>
+    <div class="container2">
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+    </div>
+    <div class="container3">
+        <div class="box">100</div>
+        <div class="box">300</div>
+        <div class="box">400</div>
+    </div>
+</body>
+
+</html>

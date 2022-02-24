@@ -1,0 +1,67 @@
+<!doctype html>
+<!--Aroa Granero Omañas 
+Fecha Creacion: 28/10/2020
+Fecha Modificacion: 28/11/2020 -->
+<html lang="es">
+
+<head>
+    <title>HTML 02-5 AroaGranero</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="aroaGraneroOmañas">
+    <meta name="generator" content="notepad++">
+    <style>
+        ul,
+        li {
+            list-style: none;
+            font-size: 1.5rem;
+        }
+
+        .uno li::before {
+            content: "** ";
+            color: red;
+            font-size: 1.5rem;
+        }
+        .dos li::before {
+            content: url("http://picsum.photos/id/213/20/20");
+            padding: 10px 5px 5px 10px;
+        }
+        .dos li::after {
+            content: url("https://img.icons8.com/material-outlined/30/000000/search--v2.png");
+        }
+       .tres li:nth-child(2n+1)::before {
+            content: "$$$ ";
+            color: rgb(163, 141, 44);
+            font-size: 1.5rem;
+        }
+        .tres li:nth-child(2n)::before {
+            content: "€€€ ";
+            color: rgb(38, 114, 42);
+            font-size: 1.5rem;
+        }
+    </style>
+
+</head>
+
+<body>
+    <ul class="uno">
+        <li>Primer elemento</li>
+        <li>Segundo elemento</li>
+        <li>Tercer elemento</li>
+        <li>Cuarto elemento</li>
+    </ul>
+    <ul class="dos">
+        <li>Primer elemento</li>
+        <li>Segundo elemento</li>
+        <li>Tercer elemento</li>
+        <li>Cuarto elemento</li>
+    </ul>
+    <ul class="tres">
+        <li>Primer elemento</li>
+        <li>Segundo elemento</li>
+        <li>Tercer elemento</li>
+        <li>Cuarto elemento</li>
+    </ul>
+</body>
+
+</html>

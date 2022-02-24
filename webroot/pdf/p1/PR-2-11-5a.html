@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGO</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 95vw;height: 95vh;
+            background-color: yellowgreen;
+            animation: colorFondo 2s linear infinite alternate;
+            padding: 6rem 2rem;
+        }
+        @keyframes colorFondo {
+            to{
+                background-color: cornflowerblue;
+            }
+        }
+        .wrapper{
+            width: 90%;height: 100%;
+            background-color: rgb(70, 156, 156);
+            margin: auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .pelota{
+            width: 80px;height: 80px;
+            background-color: darkred;
+            border-radius: 50%;
+            position: relative;
+            top:45vh;
+            animation: botar 3s linear infinite alternate;
+        }
+        .suelo{
+            width: 100%;height: 20px;
+            background-color: black;
+            position: relative;
+            top:45vh;
+        }
+        @keyframes botar {
+            0%{top:45vh;left:0;}
+            10%{top:10vh;left:9.5vw;}
+            20%{top:45vh;left:19vw;}
+            30%{top:15vh;left:28.5vw;}
+            40%{top:45vh;left:38vw;}
+            50%{top:20vh;left:45.5vw;}
+            60%{top:45vh;left:55vw;}
+            70%{top:25vh;left:64.5vw;}
+            80%{top:45vh;left:74vw;}
+            90%{top:30vh;left:83.5vw;}
+            100%{top:45vh;left:89vw;} 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="pelota"></div>
+            <div class="suelo"></div>
+        </div>
+    </div>
+</body>
+</html>

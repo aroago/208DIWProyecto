@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            color: white;
+            background-color: black;
+        }
+
+        a {
+            color: rgb(192, 192, 192);
+        }
+
+        .container {
+            display: flex;
+            width: 95vw;
+            height: 95vh;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .imgCommon {
+            position: relative;
+            width: 400px;
+            height: 200px;
+
+        }
+
+        .copyri {
+            position: absolute;
+            top: 0px;
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.5s linear;
+
+        }
+
+        .texto {
+            position: absolute;
+            bottom: 10px;
+            left: 5px;
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.5s linear;
+        }
+
+        .imgCommon:hover>.copyri,
+        .imgCommon:hover>.texto {
+            visibility: visible;
+            opacity: 1;
+
+        }
+
+        .imgright {
+            position: relative;
+            width: 400px;
+            height: 200px;
+        }
+
+        .Copyright {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.5s linear;
+        }
+
+        .imgright:hover>.Copyright,
+        .imgright:hover>.texto {
+            visibility: visible;
+            opacity: 1;
+            color: black;
+        }
+
+        .imgLeft {
+            position: relative;
+            width: 400px;
+            height: 200px;
+        }
+
+        .CopyLeft {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.5s linear;
+        }
+
+        .imgLeft:hover>.CopyLeft,
+        .imgLeft:hover>.texto {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">LICENCIAS IMAGENES</h1>
+    <div class="container">
+        <div class="imgCommon">
+            <img src="./pexels-pixabay-97082.jpg" width="400px" height="200px">
+            <div class="copyri">
+                <img src="./Coloriuris_Negro.png" width="100px" height="50px">
+            </div>
+            <div class="texto">
+                Este obra está bajo una licencia
+                de Coloriuris_Negro
+                Reconocimiento-NoComercial 4.0 Internacional</a>.
+            </div>
+        </div>
+        <div class="imgCommon">
+            <img src="./look-birds-predator-beak-wallpaper-preview.jpg" width="400px" height="200px">
+            <div class="copyri">
+                <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                    <img alt="Licencia de Creative Commons" style="border-width:0"
+                        src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+
+            </div>
+            <div class="texto">
+                Este obra está bajo una <a rel="license"
+                    href="http://creativecommons.org/licenses/by-nc-sa/4.0/">licencia de Creative Commons
+                    Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional</a>
+            </div>
+        </div>
+        <div class="imgright">
+            <img src="./imagen-cachorro-comprimir.jpg" width="400px" height="200px">
+            <div class="Copyright">
+                <img src="./Copyright.png" width="50px" height="50px">
+            </div>
+            <div class="texto">
+                Derechos de CopyRight
+            </div>
+        </div>
+        <div class="imgLeft">
+            <img src="./_90488599_thinkstockphotos_gato6.jpg" width="400px" height="200px">
+            <div class="CopyLeft">
+                <img src="./copyleft.png" width="50px" height="50px">
+            </div>
+            <div class="texto">
+                Derechos de CopyLeft
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

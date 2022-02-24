@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Ewert&family=Monofett&family=Tulpen+One&display=swap');
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+ul, ol{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+    color:black}
+
+header{
+    text-align:center;
+
+}
+header h1 {
+    font-size: 30px;
+    padding: 25px 0px 25px 0px;
+    background-color: rgba(181,137,241,0.9);
+    font-family: 'Ewert', cursive;
+}
+
+
+html{
+    background-image: url("../img/fondo.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: black;
+
+}
+
+#lista {
+    counter-reset: li; 
+    list-style: none; 
+    *list-style: decimal; 
+    font: 15px 'trebuchet MS', 'lucida sans';
+    padding: 0;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+#lista ol {
+    margin: 0 0 0 2em; 
+}
+
+#lista li{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em .8em;
+    *padding: .4em;
+    margin: .5em 0 .5em 2.5em;
+    background: #62D4D3;
+    color: black;
+    text-decoration: none;
+    transition: all .3s ease-out; 
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+#lista li:hover{
+    background: #E9C0E5;
+}   
+
+#lista li:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute; 
+    left: -2.5em;
+    top: 50%;
+    margin-top: -1em;
+    background: whitesmoke;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#lista li:after{
+    position: absolute; 
+    content: '';
+    border: .5em solid transparent;
+    left: -1em;
+    top: 50%;
+    margin-top: -.5em;
+    transition: all .3s ease-out;               
+}
+
+#lista li:hover:after{
+    left: -.5em;
+    border-left-color: whitesmoke;             
+}
+#footerP{
+    background-color:rgba(181,137,241,0.9);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    color: white;
+    padding: 25px 0px 25px 0px;
+}
+#iconos{
+    position: absolute;
+    bottom: 0%;
+    right:4%;
+}
+.iconoIMG{
+    width: 50px;
+    height: 50px
+}
+#divLista{
+        width: 380px;     
+        position: absolute;
+        top:30%;
+        left: 45%;           
+        margin-top: -100px;
+        margin-left: -100px;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 600px;
+            height: 700px;
+            margin: 2rem auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        input {
+            display: none;
+        }
+
+        input+label {
+            display: block;
+            width: 160px;
+            height: 42px;
+            line-height: 42px;
+            text-align: center;
+            background-color: rgb(32, 161, 133);
+            color: white;
+            padding: 0.2rem;
+            font-weight: bold;
+            margin-top: 1rem;
+            border-radius: 0.2rem;
+        }
+        div div{
+            position: absolute;
+            background-color: rgba(68, 138, 98,0.8);
+            width: 90%;height: 60%;
+            top: 35px;
+            /* display: none; */
+            left: -100%;
+            transition: all 0.8s ease-in;
+        }
+        div div label{
+            display: block;
+            float: right;
+            width: 48px;height: 48px;
+            background-color: tomato;
+            border-radius: 50px;
+            text-align: center;
+            line-height: 48px;
+            color:white;
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin: 1rem;
+        }
+        p{
+            
+            position: absolute;
+            width: 70%;height: 40%;
+            padding: 1rem;
+            line-height: 22px;
+            background-color: grey;
+            transform: translate(-50%,-50%);
+            top:50%;left: 50%;
+        }
+        input:first-of-type:checked ~ div {
+            /* display: block; */
+            left: 0%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Ventana Modal con :checked y radio buttons</h2>
+        <input type="radio" id="open_mM" name="btns">
+        <label for="open_mM">MOSTRAR MODAL</label>
+        <input type="radio" id="close_vM" name="btns">
+        
+        <div>
+            <label for="close_vM" id="close">X</label>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Corporis omnis dolorum dolorem, nulla necessitatibus sint
+                mollitia optio doloremque fugiat vero eaque fuga iure est
+                repudiandae dolor ratione corrupti earum iusto!</p>
+        </div>
+    </div>
+</body>
+
+</html>

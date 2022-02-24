@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aroa Granero Omañas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper {
+            width: 500px;
+            height: 400px;
+            background-color: greenyellow;
+            margin: 3rem auto;
+            display: flex;
+            flex-flow: wrap row;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .dado {
+            flex-basis: 120px;
+            padding: 5px;
+            background: red;
+            width: 120px;
+            height: 120px;
+            border-radius: .5rem;
+            display: flex;
+        }
+
+        .punto {
+            width: 32px;
+            height: 32px;
+            background: black;
+            border-radius: 50%;
+        }
+
+        .dado:nth-child(1) {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .dado:nth-child(2) {
+            justify-content: space-between;
+        }
+
+        .dado:nth-child(2) .punto:nth-child(2) {
+            align-self: flex-end;
+        }
+
+        .dado:nth-child(3) {
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .dado:nth-child(3) .punto:nth-child(1) {
+            align-self: flex-start;
+        }
+
+        .dado:nth-child(3) .punto:nth-child(3) {
+            align-self: flex-end;
+        }
+        
+        .dado:nth-child(4), .dado:nth-child(5),.dado:nth-child(6){
+            justify-content: space-between;
+        }
+        .dado:nth-child(4) .c1, .dado:nth-child(4) .c2 ,
+        .dado:nth-child(5) .c1,.dado:nth-child(5) .c3,.dado:nth-child(6) .c1, .dado:nth-child(6) .c2 {
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+        }
+        .dado:nth-child(5) .c2{
+            align-self: center;
+        }
+
+       
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="dado">
+            <div class="punto"></div>
+        </div>
+        <div class="dado">
+            <div class="punto"></div>
+            <div class="punto"></div>
+        </div>
+        <div class="dado">
+            <div class="punto"></div>
+            <div class="punto"></div>
+            <div class="punto"></div>
+        </div>
+        <div class="dado">
+            <div class="c1">
+                <div class="punto"></div>
+                <div class="punto"></div>
+            </div>
+            <div class="c2">
+                <div class="punto"></div>
+                <div class="punto"></div>
+            </div>
+        </div>
+        <div class="dado">
+            <div class="c1">
+                <div class="punto"></div>
+                <div class="punto"></div>
+            </div>
+            <div class="c2">
+                <div class="punto"></div>
+            </div>
+            <div class="c3">
+                <div class="punto"></div>
+                <div class="punto"></div>
+            </div>
+        </div>
+        <div class="dado">
+            <div class="c1">
+                <div class="punto"></div>
+                <div class="punto"></div>
+                <div class="punto"></div>
+            </div>
+            <div class="c2">
+                <div class="punto"></div>
+                <div class="punto"></div>
+                <div class="punto"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+
+            background-color: rgb(86, 114, 116);
+        }
+
+        .container {
+            width: 95vw;
+            height: 90vh;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            place-items: center;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .masck1 {
+            clip-path: polygon(0% 20%, 61% 38%, 40% 8%, 100% 50%, 38% 91%, 60% 62%, 0% 80%);
+        }
+
+        .masck2 {
+            clip-path: url(#svgClip);
+        }
+
+        .masck3 {
+            clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+        }
+        .masck4{
+            clip-path: url(#svgClip2);
+        }
+        .masck5{
+            clip-path: url(#svgClip3);
+        }
+        .masck6{
+            clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 24%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+        }
+        video{
+            width: 100%;height: 100%;
+            clip-path: url(#svgCoorRelativas);
+            margin: auto;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="masck1">
+            <img src="https://images.unsplash.com/photo-1579356094148-9b74dab60f5b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt="dibujoTigre">
+        </div>
+        <div class="masck2">
+            <img
+                src="https://images.unsplash.com/photo-1644865439228-49106cb7b601?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" />
+        </div>
+        <div class="masck3">
+            <img src="https://images.unsplash.com/photo-1548365327-ba68b3991b34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                alt="dibujoTigre">
+        </div>
+        <div class="masck4">
+            <img src="https://images.unsplash.com/photo-1611074524342-4fcc22159066?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                alt="dibujoTigre">
+        </div>
+        <div class="masck5">
+            <img src=" https://images.unsplash.com/photo-1574198998217-deedebc22a4a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt="dibujoTigre">
+        </div>
+        <div class="masck6">
+            <img
+                src="https://images.unsplash.com/photo-1644865439228-49106cb7b601?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" />
+        </div>
+        <svg width="200" height="200">
+            <clipPath id="svgClip">
+                <path d="M2.94131 199L100 1.13533L197.059 199H2.94131Z" fill="#C4C4C4" stroke="black" />
+            </clipPath>
+        </svg>
+        <svg width="200" height="200">
+            <clipPath id="svgClip2">
+            <ellipse cx="100" cy="100.5" rx="100" ry="100.5" fill="#C4C4C4" />
+        </clipPath>
+        </svg>
+        <svg width="200" height="200">
+            <clipPath id="svgClip3">
+                <path d="M110 11.8333C140.287 28.9233 107.322 83.4954 129 98.8334C129 98.8334 152 142.833 178 132.833C204 122.833 205 149.833 143 183.833C81 217.833 75.9999 62.8334 21 62.5C-34 62.1667 75.1682 -7.82074 110 11.8333Z" fill="#C4C4C4"/>
+            </clipPath>
+         </svg>
+    </div>
+
+</body>
+
+</html>

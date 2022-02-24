@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 90vw;
+            height: 90vh;
+            margin: auto;
+            background-color: rgb(223, 221, 221);
+            display: grid;
+            grid-template-columns: l1 4fr l2 1.5fr 1.5fr 3fr;
+            grid-template-rows: f1 2fr 5fr 3fr rend;
+        }
+
+        main {
+            background-color: tomato;
+            grid-column: l1 / l2;
+            grid-row: f1/rend;
+        }
+
+        article:nth-of-type(1){
+            background-color: rgb(104, 81, 64);
+            grid-column: 2/3;
+            grid-row: 1/3;
+        }
+
+        article:nth-of-type(2){
+            background-color: rgb(165, 139, 121);
+            grid-column: 3/4;
+            grid-row: 1/3;
+        }
+
+        nav {
+            background-color: rgb(200, 127, 127);
+            grid-column: 4/5;
+            grid-row: 1/2;
+        }
+
+        aside {
+            background-color: blueviolet;
+            grid-column: 4/span 1;
+            grid-row: 2/span 2;
+        }
+
+        footer {
+            background-color: gray;
+            grid-column: 2/4;
+            grid-row: 3/-1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <main>main</main>
+        <article>artuculo 1</article>
+        <article>artuculo 2</article>
+        <nav>nav </nav>
+        <aside>aside</aside>
+        <footer> footer</footer>
+    </div>
+</body>
+
+</html>

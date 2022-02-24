@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, sans-serif;
+        }
+        .container{
+            width: 98vw;
+            height: 90vh;
+            margin: 10px auto;
+            padding: 10px;
+            display: flex;
+            flex-flow: row wrap;
+            gap: 10px;
+        }
+        .product{
+            flex-basis: 224px;
+            height: 325px;
+            display: flex;
+            flex-flow: column nowrap;
+            box-shadow: 
+        rgba(13, 37, 59, 0.4) 5px 5px,
+         rgba(18, 21, 65, 0.3) 10px 10px, 
+         rgba(20, 25, 70, 0.2) 15px 15px, 
+         rgba(18, 73, 25, 0.1) 20px 20px, 
+         rgba(26, 97, 35, 0.05) 25px 25px;
+        
+            border-radius: .4rem;
+            
+        }
+        .banner{
+            width: 100%;
+            flex-basis: 60%;
+            position: relative;
+            background-color: red;
+            display: flex;
+            background-image: url("http://picsum.photos/id/50/500/500");
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: .4rem .4rem 0 0;
+            overflow: hidden;
+        }
+        .product:nth-of-type(2) .banner{
+            background-image: url("http://picsum.photos/id/50/500/500");
+        }
+        .product:nth-of-type(3) .banner{
+            background-image: url("http://picsum.photos/id/50/500/500");
+        }
+        .product:nth-of-type(4) .banner{
+            background-image: url("http://picsum.photos/id/45/500/500");
+        }
+        .options{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            position: relative;
+            top: 50%; 
+            left: -100%;
+            transition: all 0.5s ease;
+            gap: 5px;
+        }
+        .options img{
+            width: 20%;
+            height: 20%;
+            border-radius: 4px;
+        }
+        .banner:hover .options{
+            left: 0;
+        }
+        .info{
+            flex-basis: 40%;
+            background-color: grey;
+            font-family: sans-serif;
+            font-weight: bold;
+            border-radius: 0 0 .4rem .4rem;
+            position: relative;
+        }
+        .price{
+            background-color: gold;
+            width: 28%;
+            height: 1.4rem;
+            border-radius: 4px;
+            top: -12px;
+            left: 15px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .description{
+            text-transform: uppercase;
+            color: rgb(25, 112, 29);
+        }
+        .icons{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            margin-top: 10px;
+            gap: 5px;
+        }
+        .icons img:nth-child(3){
+            margin-left: auto;
+        }
+        .icons img{
+            flex: 0 0 18%;
+            height: 18%;
+            width: 18%;
+            border-radius: 4px;
+            margin: 4px;
+        }
+        .icons>img:nth-last-child(1){
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product">
+            <div class="banner">
+                <div class="options">
+                    <img src="http://picsum.photos/id/40/100/100" alt="options">
+                    <img src="http://picsum.photos/id/46/100/100" alt="options">
+                    <img src="http://picsum.photos/id/43/100/100" alt="options">
+                    <img src="http://picsum.photos/id/42/100/100" alt="options">
+                    <img src="http://picsum.photos/id/48/100/100" alt="options">
+                </div>
+            </div>
+            <div class="info">
+                <div class="price">
+                    <p>65,99</p>
+                </div>
+                <div class="description">
+                    reloj de cuarzo con correa de silicona informal...
+                </div>
+                <div class=icons>
+                    <img src="http://picsum.photos/id/43/100/100" alt="description">
+                    <img src="http://picsum.photos/id/40/100/100" alt="description">
+                    <img src="http://picsum.photos/id/45/100/100" alt="description">
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="banner">
+                <div class="options">
+                    <img src="http://picsum.photos/id/40/100/100" alt="options">
+                    <img src="http://picsum.photos/id/46/100/100" alt="options">
+                    <img src="http://picsum.photos/id/43/100/100" alt="options">
+                    <img src="http://picsum.photos/id/42/100/100" alt="options">
+                    <img src="http://picsum.photos/id/48/100/100" alt="options">
+                </div>
+            </div>
+            <div class="info">
+                <div class="price">
+                    <p>65,99</p>
+                </div>
+                <div class="description">
+                    reloj de cuarzo con correa de silicona informal...
+                </div>
+                <div class=icons>
+                    <img src="http://picsum.photos/id/43/100/100" alt="description">
+                    <img src="http://picsum.photos/id/40/100/100" alt="description">
+                    <img src="http://picsum.photos/id/45/100/100" alt="description">
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="banner">
+                <div class="options">
+                    <img src="http://picsum.photos/id/40/100/100" alt="options">
+                    <img src="http://picsum.photos/id/46/100/100" alt="options">
+                    <img src="http://picsum.photos/id/43/100/100" alt="options">
+                    <img src="http://picsum.photos/id/42/100/100" alt="options">
+                    <img src="http://picsum.photos/id/48/100/100" alt="options">
+                </div>
+            </div>
+            <div class="info">
+                <div class="price">
+                    <p>65,99</p>
+                </div>
+                <div class="description">
+                    reloj de cuarzo con correa de silicona informal...
+                </div>
+                <div class=icons>
+                    <img src="http://picsum.photos/id/43/100/100" alt="description">
+                    <img src="http://picsum.photos/id/40/100/100" alt="description">
+                    <img src="http://picsum.photos/id/45/100/100" alt="description">
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="banner">
+                <div class="options">
+                    <img src="http://picsum.photos/id/40/100/100" alt="options">
+                    <img src="http://picsum.photos/id/46/100/100" alt="options">
+                    <img src="http://picsum.photos/id/43/100/100" alt="options">
+                    <img src="http://picsum.photos/id/42/100/100" alt="options">
+                    <img src="http://picsum.photos/id/48/100/100" alt="options">
+                </div>
+            </div>
+            <div class="info">
+                <div class="price">
+                    <p>65,99</p>
+                </div>
+                <div class="description">
+                    reloj de cuarzo con correa de silicona informal...
+                </div>
+                <div class=icons>
+                    <img src="http://picsum.photos/id/43/100/100" alt="description">
+                    <img src="http://picsum.photos/id/40/100/100" alt="description">
+                    <img src="http://picsum.photos/id/45/100/100" alt="description">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

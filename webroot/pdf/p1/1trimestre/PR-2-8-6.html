@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 2-8-6</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Tahoma, sans-serif;
+        }
+
+        body {
+            background-color: burlywood;
+        }
+
+        .contenedor {
+            width: 95%;
+            height: 100vh;
+            margin: auto;
+        }
+
+        ul {
+            display: block;
+            list-style: none;
+            background: #abc;
+        }
+
+        ul li {
+            display: inline-block;
+            width: 150px;
+            height: 40px;
+            position: relative;
+        }
+
+        li a {
+            display: block;
+            color: rgb(0, 0, 255);
+            text-decoration: none;
+            font-family: 'Segoe UI', sans-serif;
+            line-height: 40px;
+            font-weight: bold;
+            padding-left: 15px;
+        }
+
+        a:hover {
+            background: rgb(235, 222, 206);
+        }
+
+        ul>li>ul {
+            position: absolute;
+            display: none;
+        }
+
+        ul>li:hover>ul {
+            display: block;
+        }
+
+        ul>li>ul>li {
+            position: relative;
+        }
+
+        ul>li>ul>li>ul {
+            position: absolute;
+            top: 0;
+            left: 100%;
+        }
+
+        section {
+            line-height: calc(100vh - 48px);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class=contenedor>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Oficina</a></li>
+                <li><a href="#">Instituto
+                        <span>&#x25BC;</span>
+                    </a>
+                    <ul class="submenu1">
+                        <li><a href="">FyQ</a></li>
+                        <li><a href="">Ingles</a></li>
+                        <li><a href="">Matematicas
+                                <span>&#x25B6;</span>
+                            </a>
+                            <ul>
+                                <li><a href="#">Academicas</a></li>
+                                <li><a href="#">Aplicadas</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Alumnos</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h2>MENU DESPLEGABLE (Drop Down) con subniveles</h2>
+        </section>
+    </div>
+</body>
+
+</html>

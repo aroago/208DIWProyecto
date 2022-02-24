@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR-1-1-1-Color</title>
+    <style>
+        table{  
+                text-align: center;
+                width: 100%;}
+        td{padding: 10px;}
+        h4{text-align: center;}
+        .fila1 td:nth-child(1){background-color:#FF0000;}
+        .fila1 td:nth-child(2){background-color:#00FF00;}
+        .fila1 td:nth-child(3){background-color:#0000FF;}
+        
+        .fila1 td:nth-child(1):hover{background-color:#00FFFF;}
+        .fila1 td:nth-child(2):hover{background-color:#FF00FF;}
+        .fila1 td:nth-child(3):hover{background-color:#FFFF00;}
+
+        .oculto{display: none;}
+        .fila1 td:nth-child(1):hover .oculto{display: block;}
+        .fila1 td:nth-child(1):hover .vista{display: none;}
+
+        .fila1 td:nth-child(2):hover .oculto{display: block;}
+        .fila1 td:nth-child(2):hover .vista{display: none;}
+        
+        .fila1 td:nth-child(3):hover .oculto{display: block;}
+        .fila1 td:nth-child(3):hover .vista{display: none;}
+
+        
+    </style>
+</head>
+<body>
+    <h4>Colores RGB,al pasar el ratón por encima,muestran el color complemenario:</h4>
+    <table>
+        <tr class="fila1">
+            <td >
+                <p class="vista"> Color Rojo #FF0000</p>
+                <p class="oculto"> Color Cyan #00FFFF</p>
+            </td>
+           
+            <td>
+                <p class="vista"> Color Verde #00FF00</p>
+                <p class="oculto"> Color Magenta #FF00FF</p>
+            </td>
+            <td>
+                <p class="vista">Color Azul #0000FF</p>
+                <p  class="oculto"> Color Amarillo #FFFF00</p>
+            </td>
+           
+        </tr>
+    </table>
+
+</body>
+</html>

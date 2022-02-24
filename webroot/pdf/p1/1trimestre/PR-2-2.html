@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+* {
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+    font-family: Helvetica, sans-serif;
+	}
+
+ul, ol{
+	list-style:none;
+}
+
+.container{
+    position: relative;
+    width:100vw;height:100vw ;
+    background-color: rgb(15, 131, 115);
+
+}
+header{
+    height: 120px;width:100vw;
+    background-color:grey;
+    position: relative;
+}
+header *{
+    position: absolute;
+}
+header img:nth-of-type(1){
+    left: 15%;
+    top: 10%;
+}
+header img:nth-of-type(2){
+    right: 15%;
+    top:10%;
+}
+header h1{
+    width: 100%;
+    text-align: center;
+    line-height: 120px;
+}
+main{
+    width: 100%;
+    height: 100vw;
+    position: relative;
+}
+nav{
+    float: left;
+    width: 20%;
+    height:100vw;
+    background-color: rgba(255, 0, 0, 0.788);
+    padding: 5px;
+}
+section{
+    padding-left: 20px;
+    width: 60%;
+    height: 100vw;
+    float: left;
+    background-color: rgb(207, 215, 223);
+    overflow: scroll;
+}
+aside{
+    float: right;
+    width: 20%;
+    height: 100vw;
+    background-color: rgba(255, 0, 0, 0.788);
+}
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color:grey;
+  clear: both;
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+}
+ul{
+    padding: 5%;
+    background-color: rgb(207, 215, 223);
+}
+.derecho{
+    margin: 5%;
+    padding: 5%;
+    background-color: rgb(207, 215, 223);
+}
+article h2,article h3, article footer{
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <header>
+            <img src="http://picsum.photos/id/10/100/100" alt="img" />
+            <h1>CABECERA</h1>
+             <img src="http://picsum.photos/id/2/100/100" alt="img" />
+            
+    </header>
+
+    <main>
+           <nav>
+               <ul>
+                   <li><a href="#">Inicio</a></li>
+                   <li><a href="#">Opciones</a></li>
+                   <li><a href="#">Servicios</a></li>
+                   <li><a href="#">Contacto</a></li>
+               </ul>
+           </nav>
+            <section>
+                <article>
+                    <h2>Mi primer articulo</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, eaque enim harum corporis deserunt nulla
+                        molestias aspernatur ducimus quos consequatur vel commodi explicabo maxime ut deleniti inventore sint
+                        quae quidem.</p>
+                </article>
+                <article>
+                    <h2>Mi segundo articulo</h2>
+                    <h3>Subtitulo 2 articulo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, eaque enim harum corporis deserunt nulla
+                        molestias aspernatur ducimus quos consequatur vel commodi explicabo maxime ut deleniti inventore sint
+                        quae quidem.</p>
+                        <footer>Comentarios</footer>
+                </article>
+                <article>
+                    <h2>Mi tercer articulo</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, eaque enim harum corporis deserunt nulla
+                        molestias aspernatur ducimus quos consequatur vel commodi explicabo maxime ut deleniti inventore sint
+                        quae quidem.</p>
+                        <footer>Comentarios</footer>
+                </article>
+            </section>
+       
+        <aside>
+            <div class="derecho">
+            <p>Aqui tenemos nuestra seccion de links interesantes</p> 
+            <p> Elemento: details</p>
+            <details>
+                <summary>Lista datos Sumary</summary>
+                <ol>
+                    <li>Link1</li>
+                    <li>Link2</li>
+                </ol>
+            </details>
+             </div>
+         </aside>
+    </main>
+    <div class="footer">
+        <p> &copy; Todos los derechos reservados</p>
+        <p> Progress:
+        <progress id="file" max="100" value="70"> 70% </progress></p>
+    </div>
+</div>
+</body>
+
+
+
+</html>

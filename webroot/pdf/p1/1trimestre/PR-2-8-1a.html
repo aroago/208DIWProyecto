@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        .container{
+            margin: 10px 1rem;
+        }
+        li{
+            display: inline-block;
+            margin:0 0.6rem;
+            width: 128px;height: 48px;
+            line-height: 48px;
+            text-align: center;
+            border-radius: 4px 4px 0 0;
+        }
+        ul{
+            position: relative;
+        }
+        article{
+            width: 512px;
+            height: 382px;
+            position: absolute;
+            
+        }
+        li:nth-of-type(1),article:nth-of-type(1){
+            background-color: rgb(142, 240, 112);
+            z-index: 10;
+
+        }
+        li:nth-of-type(2),article:nth-of-type(2){
+            background-color: rgb(89, 89, 230);
+        }
+        li:nth-of-type(3),article:nth-of-type(3){
+            background-color: rgb(232, 145, 243);
+        }
+        a{text-decoration: none;
+        color:black}
+        
+        p{
+            padding: 24px;
+        }
+       article:target{
+           z-index: 100;
+       }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul>
+            <li><a href="#art1">Primera</a></li>
+            <li><a href="#art2">Segunda</a></li>
+            <li><a href="#art3">Tercera</a></li>
+        </ul>
+        <article id="art1">
+            <p>Este es el contenido de 1 PESTAÑA</p>
+        </article>
+        <article id="art2">
+            <p>Este es el contenido de 2 PESTAÑA</p>
+        </article>
+        <article id="art3">
+            <p>Este es el contenido de 3 PESTAÑA</p>
+        </article>
+    </div>
+</body>
+
+</html>

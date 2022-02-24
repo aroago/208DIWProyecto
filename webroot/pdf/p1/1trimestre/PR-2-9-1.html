@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR-2-9-1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Tahoma, sans-serif;
+        }
+        .wrapper{
+            width:100vw ;height:100vh ;
+            background-color: gray;
+            margin: auto;
+            font-family: sans-serif;
+            padding: 10px;
+        }
+        .container{
+            display: flex;
+            flex-flow: column nowrap;
+            width: 100%;
+            height: 100%;
+            gap:5px;
+        }
+        header{
+            width: 100%;
+            flex-basis: 10%;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            padding: 5px;
+            font-size: 1.5rem;
+            background-color: rgb(132, 189, 48);
+        }
+        header img{
+            display: block;
+            border-radius: 4px;
+            
+        }
+        header div{
+            background-color: cadetblue;
+            flex-basis: 200px;
+            border-radius: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        input{
+            flex-basis: 128px;
+            height: 64px;
+            align-self: center;
+        }
+       section{
+           flex-basis: 70%;
+           display: flex;
+           flex-flow: row nowrap;
+       }
+       nav{
+           background-color: coral;
+           flex-basis: 20%;
+       }
+       main{
+           background-color: crimson;
+           flex-basis: 80%;
+           padding: 4px;
+           display: flex;
+           flex-flow: row nowrap;
+           justify-content: space-between;
+       }
+       .punto{
+           width: 64px;height: 64px;
+           border-radius: 50%;
+           background-color: black;
+       }
+       .punto:nth-of-type(2){
+           align-self: center;
+       }
+       .punto:nth-of-type(3){
+           align-self: flex-end;
+       }
+       aside{
+           flex-basis: 20%;
+           background-color: goldenrod;
+       }
+       footer{
+           flex-basis: 15%;
+           background-color: fuchsia;
+       }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <header>
+                <img src="http://picsum.photos/id/319/200/200" alt="">
+                <input type="text" placeholder="Search...">
+                <img src="http://picsum.photos/id/553/200/200" alt="">
+                <div class="boton">header</div>
+            </header>
+            <section>
+                <nav>nav</nav>
+                <main>
+                    <div class="punto"></div>
+                    <div class="punto"></div>
+                    <div class="punto"></div>
+                </main>
+                <aside>aside</aside>
+            </section>
+            <footer>
+                footer
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, sans-serif;
+        }
+
+        .container {
+            width: 98vw;
+            height: 90vh;
+            margin: 10px auto;
+            padding: 10px;
+            display: flex;
+            flex-flow: row wrap;
+            align-self: center;
+            align-items: center;
+            gap: 10px;
+            background-image: url("http://picsum.photos/id/45/1111/1222");
+            justify-content: space-around;
+        }
+
+        main {
+            width: 70vw;
+            height: 55vh;
+            background-color: rgb(255, 255, 255);
+            align-self: center;
+            display: flex;
+            border: solid 20px rgb(250, 212, 218);
+        }
+
+        aside {
+            background-color: rgb(37, 41, 31);
+            width: 60vw;
+            height: 51vh;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            gap: 20px;
+            padding-top: 10px;
+        }
+
+        aside img {
+            border-radius: 15px;
+        }
+
+        div {
+            display: flex;
+            flex-flow: row;
+        }
+
+        article {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-content: space-between;
+
+        }
+
+        article img {
+            border-radius: 15px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <main>
+            <aside>
+                <img src="http://picsum.photos/id/75/130/130" alt="options">
+                <div>
+                    <img src="http://picsum.photos/id/48/50/50" alt="options">
+                    <p>email</p>
+                </div>
+                <div>
+                    <img src="http://picsum.photos/id/47/50/50" alt="options">
+                    <p>email</p>
+                </div>
+                <div>
+                    <img src="http://picsum.photos/id/46/50/50" alt="options">
+                    <p>emil</p>
+                </div>
+            </aside>
+            <article>
+                <h1>El Tema que tu quieras con flexbox</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem vero provident quaerat
+                    deserunt praesentium error incidunt expedita nesciunt odio? Animi id ratione quis illum aut, odit
+                    voluptatem officia perferendis nostrum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae dolore eum possimus inventore
+                    reiciendis expedita veniam neque quisquam optio, facilis culpa nobis molestias, provident similique.
+                    Ipsa adipisci deleniti blanditiis vero!</p>
+                <img src="http://picsum.photos/id/67/100/100" alt="options">
+                <img src="http://picsum.photos/id/49/100/100" alt="options">
+                <img src="http://picsum.photos/id/38/100/100" alt="options">
+            </article>
+        </main>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            --v: 0s;
+        }
+
+        .container {
+            width: 500px;
+            height: 600px;
+            background-color: gray;
+            margin: 2rem auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr 0.5fr 5fr;
+        }
+
+        .box {
+            width: 50px;
+            height: 50px;
+            border-radius: 8px;
+            background-color: red;
+            box-shadow: 120px 0px red,
+                -120px 0px red,
+                0px 120px yellow,
+                0px -120px yellow;
+            margin-top: 200px;
+            animation: var(--v) girar linear infinite;
+        }
+
+        h1 {
+            margin-top: 10px;
+        }
+
+        #selectores {
+            width: 70%;
+            margin-top: 1rem;
+        }
+
+        input {
+            display: none;
+        }
+
+        label {
+            font-size: 1.5rem;
+            border: 2px solid yellow;
+            height: 30px;
+            margin: 10px;
+        }
+
+
+        @keyframes girar {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        #x1:checked~.box {
+            --v: 3s;
+        }
+
+        #x2:checked~.box {
+            --v: 2s;
+        }
+
+        #x3:checked~.box {
+            --v: 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>SELECCIONE VELOCIDAD</h2>
+        <div id="selectores">
+            <input type="radio" name="v1" id="x1">
+            <label for="x1">1X</label>
+            <input type="radio" name="v1" id="x2">
+            <label for="x2">2X</label>
+            <input type="radio" name="v1" id="x3">
+            <label for="x3">3X</label>
+            <input type="radio" name="v1" id="STOP" checked>
+            <label for="STOP">STOP</label>
+            <div class="box"> </div>
+        </div>
+    </div>
+</body>
+
+</html>

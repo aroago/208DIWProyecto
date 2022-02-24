@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aroa Granero Omañas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 90vw;
+            height: 90vh;
+            background: cadetblue;
+            margin: auto;
+        }
+
+        nav {
+
+            display: flex;
+            flex-flow: row nowrap;
+            width: 95%;
+            height: 15%;
+            background: crimson;
+            margin: auto;
+        }
+
+        .option {
+            flex-basis: 25%;
+            flex:1;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s ease;
+
+        }
+
+        .option:nth-child(1) {
+            background: rgb(133, 255, 117);
+
+        }
+
+        .option:nth-child(2) {
+            background: rgb(235, 169, 82);
+        }
+
+        .option:nth-child(3) {
+            background: rgb(105, 191, 224);
+           
+        }
+
+        .option:nth-child(4) {
+            background: rgb(166, 104, 236);
+        }
+        .option p {
+            transition: all 0.5s ease;
+            transform: rotate(-90deg);
+        }
+        .option:hover{
+            flex:5;
+        }
+        .option:hover p{
+            transform: rotate(0deg);
+           
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="option">
+                <p>Centro</p>
+            </div>
+            <div class="option">
+                <p>Alumnos</p></div>
+                <div class="option">
+                    <p>Asignaturas</p>
+                </div>
+                <div class="option">
+                    <p>Cursos</p>
+                </div>
+        </nav>
+    </div>
+</body>
+
+</html>

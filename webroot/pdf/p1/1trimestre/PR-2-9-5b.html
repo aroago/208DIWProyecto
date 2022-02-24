@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, sans-serif;
+        }
+
+        ul {
+            list-style: none;
+            background: rgb(175, 105, 221);
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-end;
+        }
+
+        ul li {
+            flex: 1 auto;
+        }
+
+        ul a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 0.7rem;
+        }
+
+        ul a:hover {
+            background: lightblue;
+        }
+
+
+        @media screen and (max-width: 768px) {
+            ul {
+                justify-content: space-around;
+            }
+
+            ul li:first-child {
+                display: none;
+            }
+
+        }
+
+        @media screen and (max-width: 576px) {
+            ul {
+                flex-flow: column nowrap;
+            }
+
+            ul a {
+                text-align: center;
+                border-bottom: 1px solid gray;
+                border-top: 1px solid gray;
+                padding: 10px;
+            }
+
+            ul li:first-child {
+                display: block;
+                order: 2;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="#">&#9883;</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    </nav>
+</body>
+
+</html>

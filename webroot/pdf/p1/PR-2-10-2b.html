@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 95vw;
+            height: 95vh;
+            margin: auto;
+            background: white;
+            display: grid;
+            grid-template-columns:25fr 50fr 25fr ;
+            grid-template-rows: repeat(3,1fr);
+            grid-template-areas: "h h h" "nav main aside" "nav ft ft";
+            gap: 5px;
+        }
+        header {
+            background-color: rgb(178, 150, 223);
+            grid-area: h;
+        }
+
+        nav {
+            background-color: rgb(163, 45, 108);
+            grid-area: nav;
+        }
+
+        main {
+            background-color: darkcyan;
+            grid-area: main;
+        }
+
+        aside {
+            background-color: rgb(107, 189, 107);
+            grid-area: aside;
+        }
+
+        footer {
+            background-color: rgb(195, 183, 178);
+            grid-area: ft;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            header
+        </header>
+        <nav>Nav</nav>
+        <main>Main</main>
+        <aside>aside</aside>
+        <footer>footer</footer>
+    </div>
+
+</body>
+
+</html>
